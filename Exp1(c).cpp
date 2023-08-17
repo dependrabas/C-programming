@@ -1,19 +1,14 @@
-//WAP to print the ASCII value of a character entered by  the user.
-
-#include<iostream>
+#include <iostream>
 using namespace std;
+int main() 
+{
+    char sing_ch; 
+	cout << " character:\n";
 
-int main() {
-    char ch;
-
-    cout << "Enter any character: ";
-    cin >> ch;
-
-     
-    int ASCII = static_cast<int>(ch);
-   
-
-    cout << " The ASCII value of " << ch << " is: " << ASCII << endl;
-
-    return 0;
+ 	cout << " Input a character: ";
+	    cin >> sing_ch;	
+	
+  cout <<" The ASCII value of "<<sing_ch<<" is: " <<(int)sing_ch << endl; 
+  cout <<" The character for the ASCII value "<<(int)sing_ch <<" is: "<<(char)((int)sing_ch) << endl<< endl; 
+  return 0;
 }
